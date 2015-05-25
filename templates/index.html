@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+<form method="POST">
+    <label for="user-1">User 1</label>
+    <input id="user-1" type="text" name="user_1">
+    <label for="user-2">User 2</label>
+    <input id="user-2" type="text" name="user_2">
+    <input type="submit" value="Search">
+</form>
+{% if result is not None %}
+    Result: {{ result }}
+{% end %}
+</body>
+</html>
